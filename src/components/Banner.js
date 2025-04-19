@@ -11,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer" ];
+  const toRotate = [ "Software Engineer", "Developer Full Stack Python", "Developer Oracle PL/SQL", "Developer Oracle APEX" , "Developer JS Full Stack" ,"Developer React/Node - JS"];
   const period = 2000;
 
   useEffect(() => {
@@ -56,7 +56,7 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">HI welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Elton Lopez`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Software Engineer", "Developer Full Stack Python", "Developer Oracle PL/SQL", "Developer Oracle APEX" , "Developer JS Full Stack" "Developer React/Node - JS"]'><span className="wrap">{text}</span></span></h1>
+                <h1>{`Hi! I'm Elton Lopez`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Software Engineer", "Developer Full Stack Python", "Developer Oracle PL/SQL", "Developer Oracle APEX" , "Developer JS Full Stack" , "Developer React/Node - JS"]'><span className="wrap">{text}</span></span></h1>
                   <p>Full-stack web developer and future software engineer, with experience in creating websites, management systems, applications, and dashboards for decision-making. Passionate about building technological solutions that solve real problems and add value to users, especially in data manipulation and analysis.</p>
                   <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
               </div>}
